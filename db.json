@@ -1,3 +1,24 @@
 {
-  "tarefas": []
+  "tarefas": [
+    {
+      "id": "5257",
+      "nome": "estudar react"
+    },
+    {
+      "id": "e4d1",
+      "nome": "finalizar projeto"
+    },
+    {
+      "id": "18e1",
+      "nome": "estudar html"
+    },
+    {
+      "id": "1a83",
+      "nome": "estudar css"
+    },
+    {
+      "id": "e6d0",
+      "nome": "finalizar a lista de psd"
+    }
+  ]
 }
