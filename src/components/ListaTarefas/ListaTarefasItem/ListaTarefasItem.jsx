@@ -10,14 +10,19 @@ const ListaTarefasItem = (props) => {
 
     const [estaEditando, setEstaEditando ] = useState(false);
 
+    const onBlurTarefa = (event) => {
+        const nomeTarefa = event.currentTarget.value;
+        editarTarefa(id, nomeTarefa);
+        setEstaEditando(false)
+    };
+
     const { editarTarefa, removerTarefa } = useAppContext();
     return (
         <li className={style.ListaTarefasItem}>
             {estaEditando && (
                 <CampoTexto
                     defaultValue={nome}
-                    onChange={event => editarTarefa(id, event.currentTarget.value)} 
-                    onBlur={() => setEstaEditando(false)} 
+                    onBlur={onBlurTarefa} 
                     autoFocus 
                 />
             )}
